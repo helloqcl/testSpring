@@ -26,7 +26,7 @@ public class People implements PeopleBehavior {
     @Value("19")
     private int age;
     private List<String> kinshipList;
-    private Map<String,People> peopleMap ;
+    private Map<String, People> peopleMap;
     //constructor
 
     public People(int pId, String pName, int age) {
@@ -80,26 +80,25 @@ public class People implements PeopleBehavior {
     }
 
     //people behavior
-    @Override
 
     public Object eat() {
         System.out.println(this.pName + "is eatting");
         return this;
     }
 
-    @Override
+
     public Object run() {
         System.out.println(this.pName + "is running");
         return this;
     }
 
-    @Override
+
     public Object walk() {
         System.out.println(this.pName + "is walking");
         return this;
     }
 
-    @Override
+
     public Object relax() {
         return null;
     }

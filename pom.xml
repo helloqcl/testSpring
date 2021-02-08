@@ -1,25 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-
     <groupId>personal.qcl.test</groupId>
     <artifactId>testSpring</artifactId>
-    <version>1.0-SNAPSHOT</version>
-
-    <name>testSpring</name>
-    <!-- FIXME change it to the project's website -->
-    <url>http://www.testSpring.test.qcl.personal</url>
-
-    <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.source>1.8</maven.compiler.source>
-        <maven.compiler.target>1.8</maven.compiler.target>
-    </properties>
+    <version>0.0.1-SNAPSHOT</version>
 
     <dependencies>
-        <!--junit4.13-->
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
@@ -36,10 +22,24 @@
         <dependency>
             <groupId>org.aspectj</groupId>
             <artifactId>aspectjweaver</artifactId>
-            <version>1.9.6</version>
-            <scope>compile</scope>
+            <version>1.7.1</version>
         </dependency>
-
-
     </dependencies>
-</project>
+
+    <build>
+        <plugins>
+           <!--  maven插件控制 -注意修改->-->
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-compiler-plugin</artifactId>
+                        <version>3.1</version>
+                        <configuration>
+                            <source>1.8</source>
+                            <target>1.8</target>
+                            <encoding>utf-8</encoding>
+                        </configuration>
+                    </plugin>
+
+            </plugins>
+        </build>
+      </project>
